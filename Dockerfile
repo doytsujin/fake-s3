@@ -7,7 +7,7 @@ RUN mkdir -p /fakes3_root
 
 COPY docker-entrypoint.sh /
 
-RUN gem install fakes3 -v 0.2.5
+RUN gem install fakes3 -v 1.0.0
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["fakes3", "-r",  "/fakes3_root", "-p",  "4569"]
